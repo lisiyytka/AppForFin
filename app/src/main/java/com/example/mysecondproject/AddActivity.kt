@@ -67,21 +67,36 @@ class AddActivity : AppCompatActivity() {
 
         }
 
-        check.setOnClickListener {
-            val intent = Intent(this, MoneyActivity::class.java)
-            val text = sum.text.toString()
-            //val a = Transfer(categoryName.text.toString(),)
+        val context = this
 
-//            a.Category= categoryName.text.toString()
-//            findViewById<TextView>(R.id.massageTextEdit)
-//            a.Comment=massageTextEdit.text.toString()
-            //intent.putExtra("sum", text)
-            startActivity(intent)
+        check.setOnClickListener {
+//            val intent = Intent(this, MoneyActivity::class.java)
+//            val text = sum.text.toString()
+//            //val a = Transfer(categoryName.text.toString(),)
+//
+////            a.Category= categoryName.text.toString()
+////            findViewById<TextView>(R.id.massageTextEdit)
+////            a.Comment=massageTextEdit.text.toString()
+//            //intent.putExtra("sum", text)
+//            startActivity(intent)
+            if (sum.text.toString().length > 0 && comment.text.toString().length > 0 ){
+                var
+            }
         }
 
         back.setOnClickListener {
-            val intent = Intent(this, CategoryActivity::class.java)
-            startActivity(intent)
+            if(text == "Доход")
+            {
+                val intent = Intent(this, MoneyActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+            else
+            {
+                val intent = Intent(this, CategoryActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
         }
 
         val arrayAdapter = ArrayAdapter.createFromResource(this, R.array.currencies,R.layout.spinner_item)

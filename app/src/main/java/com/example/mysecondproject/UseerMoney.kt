@@ -12,7 +12,8 @@ class Field{
                 Loss: Int,
                 Income: Int,
                 Date: String,
-                Comment: String,){
+                Comment: String)
+    {
         this.Category = Category
         this.Comment = Comment
         this.Date = Date

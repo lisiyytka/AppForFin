@@ -138,12 +138,23 @@
             android:id="@+id/add_btn"
             style="@style/linear_layout"
             android:layout_weight="2"
-            android:orientation="horizontal"
-            android:gravity="end">
+            android:orientation="horizontal">
             <ImageView
+                android:id="@+id/add_income"
+                android:layout_weight="1"
                 style="@style/add_images"
                 android:background="@drawable/add_btn_bg"
                 android:src="@drawable/ic_add_btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="200"/>
+            <ImageView
+                android:id="@+id/add_expenses"
+                android:layout_weight="1"
+                style="@style/add_images"
+                android:background="@drawable/add_btn_bg2"
+                android:src="@drawable/ic_add_btn2"/>
         </LinearLayout>
     </LinearLayout>
 
