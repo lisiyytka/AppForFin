@@ -61,28 +61,7 @@
             android:id="@+id/vector1"
             style="@style/vector"
             android:src="@drawable/vector" />
-        <LinearLayout
-            android:id="@+id/language"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:gravity="center">
-            <TextView
-                android:id="@+id/lang"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="20dp"
-                android:text="Язык приложения"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                />
-        </LinearLayout>
-        <ImageView
-            android:id="@+id/vector2"
-            style="@style/vector"
-            android:src="@drawable/vector" />
+
         <LinearLayout
             android:id="@+id/delete"
             android:layout_width="match_parent"
@@ -127,24 +106,6 @@
             android:id="@+id/vector4"
             style="@style/vector"
             android:src="@drawable/vector" />
-        <LinearLayout
-            android:id="@+id/exit"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:orientation="horizontal"
-            android:layout_weight="1"
-            android:gravity="center">
-            <TextView
-                android:id="@+id/account"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="20dp"
-                android:text="Выйти из аккаунта"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                />
-        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

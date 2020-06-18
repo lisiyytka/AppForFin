@@ -68,17 +68,15 @@
             android:orientation="horizontal"
             android:gravity="center">
             <TextView
-                android:id="@+id/sum_left"
+                android:id="@+id/income"
                 style="@style/LinearText"
-                android:layout_marginHorizontal="60dp"
-                android:text="1337.5"
+                android:textColor="@color/green"
                 android:textSize="25sp"
                 />
             <TextView
-                android:id="@+id/sum_right"
+                android:id="@+id/loss"
+                android:textColor="@color/red"
                 style="@style/LinearText"
-                android:layout_marginHorizontal="60dp"
-                android:text="1337.5"
                 android:textSize="25sp"
                 />
         </LinearLayout>
@@ -92,9 +90,8 @@
             android:orientation="horizontal"
             android:gravity="center">
             <TextView
-                android:id="@+id/sum_centre"
+                android:id="@+id/balance1"
                 style="@style/LinearText"
-                android:text="1156.5"
                 android:textSize="30sp"
                 android:gravity="center"
                 />
@@ -107,32 +104,16 @@
             android:id="@+id/diagrams"
             style="@style/linear_layout"
             android:layout_weight="9"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:gravity="top">
-            <TextView
-                android:id="@+id/diagram1"
-                style="@style/LinearText"
-                android:gravity="center"
-                android:text="Операции"
-                />
-            <TextView
-                android:id="@+id/diagram2"
-                style="@style/LinearText"
-                android:gravity="center"
-                android:text="Подробно"
-                />
-            <TextView
-                android:id="@+id/diagram3"
-                style="@style/LinearText"
-                android:gravity="center"
-                android:text="Круг"
-                />
-            <TextView
-                android:id="@+id/diagram4"
-                style="@style/LinearText"
-                android:gravity="center"
-                android:text="Столбцы"
-                />
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="20">
+            </ListView>
+
         </LinearLayout>
         <LinearLayout
             android:id="@+id/add_btn"

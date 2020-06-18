@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparentGreen"
-    tools:context=".CodeActivity">
+    tools:context=".RegisterActivity">
 
     <LinearLayout
         android:id="@+id/passwordItem"
@@ -19,20 +19,48 @@
         android:gravity="center">
         <TextView
             style="@style/register_input"
-            android:text="Введите пароль"
+            android:textSize="30sp"
+            android:text="Добро пожаловать!"
             />
         <TextView
             style="@style/register_input"
+            android:textSize="30sp"
             />
         <TextView
-            android:id="@+id/password"
+            style="@style/register_input"
+            android:text="Установите пароль"
+            />
+        <TextView
+            style="@style/register_input"/>
+        <TextView
+            android:id="@+id/passsuka"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             style="@style/register_input"
             android:background="@drawable/code_btn_bg"
-            android:textSize="50dp"
+            android:textSize="50sp"
             android:gravity="center"
             />
+        <TextView
+            style="@style/register_input"
+            android:textSize="12sp"
+            android:textColor="@color/darkGray"
+            android:gravity="center"
+            android:text="Пароль должен содержать 4 символа"/>
+        <TextView
+            style="@style/register_input"
+            android:textSize="30sp"
+            />
+
+        <TextView
+            android:id="@+id/next"
+            style="@style/register_input"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/code_btn_bg"
+            android:gravity="center"
+            android:text="Дальше" />
+
     </LinearLayout>
 
     <LinearLayout

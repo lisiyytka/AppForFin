@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
 
             val intent= Intent(this, MoneyActivity::class.java)
             startActivity(intent)
-            //хуй
         }
     }
 }

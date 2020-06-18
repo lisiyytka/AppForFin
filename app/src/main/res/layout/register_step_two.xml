@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/transparentGreen"
-    tools:context=".CodeActivity">
+    tools:context=".ActivityRegister2">
 
     <LinearLayout
         android:id="@+id/passwordItem"
@@ -18,20 +18,35 @@
         app:layout_constraintBottom_toTopOf="@+id/keys"
         android:gravity="center">
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             style="@style/register_input"
-            android:text="Введите пароль"
-            />
+            android:text="Установите текущий баланс"/>
         <TextView
-            style="@style/register_input"
-            />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/register_input"/>
         <TextView
-            android:id="@+id/password"
+            android:id="@+id/balance11"
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             style="@style/register_input"
             android:background="@drawable/code_btn_bg"
             android:textSize="50dp"
             android:gravity="center"
+            />
+        <TextView
+            style="@style/register_input"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/nextcig"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            style="@style/register_input"
+            android:background="@drawable/code_btn_bg"
+            android:gravity="center"
+            android:text="Дальше"
             />
     </LinearLayout>
 

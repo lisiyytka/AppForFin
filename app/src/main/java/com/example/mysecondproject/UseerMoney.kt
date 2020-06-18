@@ -1,23 +1,30 @@
 package com.example.mysecondproject
 
 class Field{
-    val id: Int = 0
-    var Category: String = " "
-    var Loss: Int = 0
-    var Income: Int = 0
-    var Date: String = " "
-    var Comment: String = " "
+    var id: Int = 0
+    var category: String = " "
+    var loss: Double = 0.0
+    var income: Double = 0.0
+    var date: String = " "
+    var comment: String = " "
+    var balance: Double = 0.0
+    var password: String = " "
+    constructor(category: String,
+                loss: Double,
+                income: Double,
+                date: String,
+                comment: String,
+                balance: Double,
+                password: String) {
+        this.category = category
+        this.comment = comment
+        this.date = date
+        this.income = income
+        this.loss = loss
+        this.balance = balance
+        this.password = password
+    }
+    constructor() {
 
-    constructor(Category: String,
-                Loss: Int,
-                Income: Int,
-                Date: String,
-                Comment: String)
-    {
-        this.Category = Category
-        this.Comment = Comment
-        this.Date = Date
-        this.Income = Income
-        this.Loss = Loss
     }
 }
